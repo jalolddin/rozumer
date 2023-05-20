@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "header/header.scss";
+@import "button/button.scss";
+@import "card/card.scss";
+@import "section/section.scss";
+@import "section1/section1.scss";
+@import "section2/section2.scss";
+@import "section3/section3.scss";
+@import "section5/section5.scss";
+@import "footer/footer.scss";
+@import "banner/banner.scss";
+@import "gallery/gallery.scss";
+
+@import "pages/about/about.scss";
+@import "pages/products/products.scss";
+@import "pages/contact/contact.scss";
+
+
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-blue_light: #0F77C2;
+    --color-blue_dark: #0C1D32;
+    --color-gray: #687588;
+    --color-black: #232324;
+    --color-white_blueish: #EFF3FE;
+    --color-gray_blue: #D4DFF5;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-white_blueish);
+    max-width: 1370px;
+    margin: auto;
+}
+
+a {
+    color: inherit;
+    text-transform: none;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.npm {
+    padding: 0;
+    margin: 0;
+}
+
+.padding {
+    &_big {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    &_normal {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    &_small {
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+    }
+}
+
+.language-picker {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+span {
+    font-size: 14px;
+    color: var(--color-gray);
+}
+
+.divided {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.line {
+    &__horizontal {
+        height: 2px;
+        width: 100%;
+        background-color: var(--color-gray);
+        border-radius: 10px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+
+.title {
+    &__number {
+        font-weight: 600;
+        font-size: 56px;
+        color: var(--color-black);
+        margin: 0;
+    }
+}
+
+.bg_blue_dark {
+    background-color: var(--color-blue_dark);
+    color: white;
+    background-image: url("../img/arrow-left_big_blue.png");
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: auto 100%;
+}
+
+.pad_ver_5 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.pad_ver_3 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.width_100 {
+    width: 100%;
+}
+.width_50px {
+    width: 50px;
+}
+.width_60 {
+    width: 60%;
+}
+
+.fw_700 {
+    font-weight: 700 !important;
+}
+
+.mba {
+    margin-bottom: auto;
+}
+
+.mta {
+    margin-top: auto;
+}
+
+
+
+@import "responsive.scss";

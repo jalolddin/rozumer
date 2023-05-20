@@ -1,0 +1,62 @@
+.contact {
+    .section {
+        padding-top: 6rem;
+    }
+    .banner {
+        h2 {
+            width: 70%;
+        }
+    }
+    &__container {
+        display: grid;
+        grid-template-columns: 0.4fr 0.6fr;
+        gap: 3rem;
+    }
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        &-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &__item {
+        color: #4A576A;
+        font-weight: 500;
+        background-color: #E8EDFA;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+        h3 {
+            padding-bottom: 1rem;
+        }
+        p {
+            width: 60%;
+            line-height: 150%;
+        }
+        &:nth-child(1) {
+            background-repeat: no-repeat;
+            background-image: url(../img/quarter-top.png);
+            background-position: right top;
+            background-size:  auto 100%;
+        }
+
+        &:nth-child(2) {
+            background-repeat: no-repeat;
+            background-image: url(../img/quarter-center.png);
+            background-position: right top;
+            background-size:  auto 100%;
+        }
+
+        &:nth-child(3) {
+            background-repeat: no-repeat;
+            background-image: url(../img/quarter-bottom.png);
+            background-position: right top;
+            background-size:  auto 100%;
+        }
+    }
+}

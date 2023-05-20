@@ -1,0 +1,1 @@
+.section1__cards{display:grid;grid-template-columns:repeat(2, 1fr);gap:3rem;column-gap:10rem}

@@ -1,0 +1,64 @@
+.header {
+    color: white;
+    font-weight: 600;
+    &__main {
+        background-image: url(../img/arrow-left_big.png), url(../img/header-main.png);
+        background-repeat: no-repeat;
+        background-size: auto 100%, cover;
+        background-position: center right, center center;
+    }
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10rem;
+        border-bottom: 1px solid gray;
+        padding: 1rem 0;
+    }
+    &__nav {
+        margin-left: auto;
+        ul {
+            display: flex;
+            gap: 2rem;
+        }
+        a {
+            padding-bottom: 2rem;
+            &:hover {
+                border-bottom: 2px solid var(--color-blue_light);
+            }
+        }
+        & .link_active {
+            border-bottom: 2px solid var(--color-blue_light);
+        }
+    }
+    &__logo {
+        height: 3rem;
+    }
+    &__center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 90vh;
+        position: relative;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 48px;
+    }
+    &__text {
+        font-weight: 454;
+        font-size: 16px;
+        line-height: 150%;
+    }
+    &__content {
+        width: 60%;
+    }
+    .scroll-down {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        position: absolute;
+        bottom: 2rem;
+    }
+    
+}
