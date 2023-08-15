@@ -27,7 +27,6 @@
               <span>Группы</span>
               <span>Меню</span>
             </div>
-
         <!-- Outer Profile -->
         <div  v-for="profile in profiles" :key="profile">
           <div v-if="!activeProfile" class="profile__outer">
