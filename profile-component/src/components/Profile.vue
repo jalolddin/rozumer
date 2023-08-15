@@ -20,6 +20,7 @@
                 </div>
               </div>
             </div>
+            <!-- INFO -->
             <div v-if="activeProfile" class="profile__events">
               <span>Био</span>
               <span>События</span>
