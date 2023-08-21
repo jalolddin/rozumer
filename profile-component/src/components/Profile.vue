@@ -1,7 +1,14 @@
 <template>
   <div  class="profile">
 
-    <h1 class="my__connects">Мои коннекты</h1>
+    <div class="profile__header">
+      <span class="profile__header__back">Назад</span>
+      <div>
+        <h1>NEIRA</h1>
+        <span>бот</span>
+      </div>
+      <img src="../assets/images/menu.svg" alt="">
+    </div>
       
           <!-- Inner profile -->
           <div v-show="activeProfile" class="profile__inner">
@@ -20,27 +27,21 @@
                 </div>
               </div>
             </div>
-            <!-- INFO -->
-            <div v-if="activeProfile" class="profile__events">
-              <span>Био</span>
-              <span>События</span>
-              <span>Локации</span>
-              <span>Группы</span>
-              <span>Меню</span>
-            </div>
-        <!-- Outer Profile -->
-        <div  v-for="profile in profiles" :key="profile">
-          <div v-if="!activeProfile" class="profile__outer">
-            <img @click="openProfile(profile)" v-if="profile.images[0]" class="profile__outer__avatar" :src="profile.images[0]" alt="">
-         <div class="profile__outer__info">
-           <h1>{{profile.name}}</h1>
-           <div class="profile__outer__info__action">
-             <span class="status">{{profile.status}}</span>
-             <span class="action">{{profile.lastAction}}</span>
-            </div>
-          </div>
-        </div>
-      </div>
+
+              <!-- Outer Profile -->
+                <div v-if="!activeProfile" class="profile__outer">
+                  <img @click="openProfile(user)" v-if="user.images[0]" class="profile__outer__avatar" :src="user.images[0]" alt="">
+              <div class="profile__outer__info">
+                <h1>{{user.name}}</h1>
+                <div class="profile__outer__info__action">
+                  <span class="status">{{user.status}}</span>
+                  <span class="action">{{user.lastAction}}</span>
+                  </div>
+                </div>
+              </div>
+            
+            <!-- TABS -->
+              <Tabs :event="UserEvents" />
    </div>
 </template>
 
@@ -49,6 +50,7 @@ import { Component, Vue, toNative, Prop, Ref } from 'vue-facing-decorator'
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 import { gsap } from 'gsap'
+import Tabs from './Tabs.vue';
 interface UserProfile {
   opened: boolean;
   images: string;
@@ -56,18 +58,30 @@ interface UserProfile {
   status: string;
   lastAction: string;
 }
+
 @Component({
     components: {
       Swiper,
       SwiperSlide,
+      Tabs
     }
 })
+
 export default class Profile extends Vue {
-  activeProfile: any = null;
-  @Ref('avatar') avatar!: HTMLElement;
-  @Prop({ type: Array as () => Array<UserProfile>, required: true })
-    private profiles!: UserProfile[];
-    
+    activeProfile: any = null;
+    UserEvents = {
+      bio: "Био",
+      connection: "Связи",
+      events: "События",
+      location: "Локации",
+      groups: "Группы",
+      menu: "Меню",
+    };
+    @Ref('avatar') avatar!: HTMLElement;
+    @Prop({ type: Object, required: true })
+    private user!: UserProfile;
+
+    // open the profile
     private openProfile(status: any): void {
     this.activeProfile = status
     this.$emit('open-profile', status);
@@ -78,6 +92,8 @@ export default class Profile extends Vue {
       duration: 1,
     });
   }
+
+  // close the profile
   private closeProfile(status: any): void {
     this.activeProfile = null
     this.$emit('close-profile', status)
@@ -88,14 +104,9 @@ export default class Profile extends Vue {
 </script>
 
 <style lang="scss" scoped>
-.my__connects{
-  color: white;
-  text-align: center;
-  font-size: 1.5rem;
-}
-.profile {
-  padding-top: 1rem;
-  width: 28rem;
+  .profile {
+    padding-top: 1rem;
+    width: 28rem;
   height: 46rem;
   position: absolute;
   font-family: sans-serif;
@@ -105,15 +116,35 @@ export default class Profile extends Vue {
   margin-top: 10rem;
   background-color: #262D30;
   overflow: auto;
-  &__events{
-    display: flex;
-    gap: 1rem;
-    span{
+  &__header{
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin-top: -0.5rem;
+  justify-content: space-between;
+  &__back{
+    color: white;
     cursor: pointer;
-    color: #9eb3b6;
-    font-size: 0.8rem;
-    padding: 1rem;
+  }
+  img{
+    height: 1.8rem;
+    cursor: pointer;
+  }
+  div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -1rem;
+    h1{
+      font-size: 1.3rem;
+      color: white;
     }
+    span{
+      font-size: 0.8rem;
+      margin-top: -0.7rem;
+      color: #9eb3b6;
+    }
+  }
   }
   &__outer {
       display: flex;
