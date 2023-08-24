@@ -6,6 +6,8 @@ body {
 }
 
 .main {
+    max-width: 1445px;
+    margin: 0 auto;
     &__header {
         background-image: url("../images/banner-image.jpg");
         background-size: cover;
@@ -24,14 +26,19 @@ body {
             padding-right: 5%;
             img {
                 height: 42px;
+                cursor: pointer;
             }
             div {
                 display: flex;
                 gap: 3.5rem;
                 span {
-                    color: #000;
+                    cursor: pointer;
                     font-size: 20px;
                     font-weight: 700;
+                    a{
+                        color: #000;
+                        text-decoration: none;
+                    }
                 }
             }
         }

@@ -1,0 +1,183 @@
+.lessons {
+  max-width: 1445px;
+  margin: 0 auto;
+}
+.lessons__header {
+  background: #f2f2f2;
+  height: 701px;
+  position: relative;
+  overflow: hidden;
+}
+.lessons__header__navbar {
+  opacity: 0.7;
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(7.5px);
+          backdrop-filter: blur(7.5px);
+  height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.lessons__header__navbar img {
+  height: 42px;
+  cursor: pointer;
+}
+.lessons__header__navbar div {
+  display: flex;
+  gap: 3.5rem;
+}
+.lessons__header__navbar div span {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+}
+.lessons__header__navbar div span a {
+  color: #000;
+  text-decoration: none;
+}
+.lessons__header__content {
+  background-image: url("../images/library-effect.png");
+  background-size: cover;
+  height: 100%;
+  background-position: 25% 58%;
+}
+.lessons__header__content .learn {
+  z-index: 22;
+}
+.lessons__content {
+  padding: 7%;
+}
+.lessons__content__stages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lessons__content__cards {
+  margin-top: 4rem;
+  display: flex;
+  gap: 3.8rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.lessons__content__cards .card {
+  background: #f2f2f2;
+  width: 370px;
+  height: 235px;
+  cursor: pointer;
+}
+.lessons__content__cards .card a {
+  color: black;
+  text-decoration: none;
+}
+.lessons__content__cards .card__header {
+  display: flex;
+  justify-content: flex-end;
+  width: 88%;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+}
+.lessons__content__cards .card__header h1 {
+  font-size: 35px;
+  font-weight: 700;
+}
+.lessons__content__cards .card__footer {
+  display: flex;
+  justify-content: space-between;
+  width: 88%;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+.lessons__content__cards .card__footer div {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.lessons__content__cards .card__footer div span {
+  font-size: 20px;
+  font-weight: 400;
+}
+.lessons__content__cards .card__footer div p {
+  margin: 0;
+  font-weight: 700;
+  font-size: 25px;
+}
+.lessons .high {
+  background: #f2f2f2;
+}
+.lessons .high .card {
+  background-color: white;
+}
+.lessons-info__content {
+  display: flex;
+  padding: 7%;
+  gap: 2.7rem;
+}
+.lessons-info__content .record {
+  background: #d9d9d9;
+  width: 782px;
+  height: 440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lessons-info__content .record h1 {
+  font-weight: 700;
+  font-size: 35px;
+}
+.lessons-info__content .chat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 439px;
+  height: 440px;
+  background: #d9d9d9;
+}
+.lessons-info__content .chat h1 {
+  font-weight: 700;
+  font-size: 35px;
+}
+.lessons-info__footer {
+  padding: 2.5%;
+  background: #f2f2f2;
+}
+.lessons-info__footer span {
+  font-weight: 700;
+  font-size: 16px;
+}
+.lessons__footer {
+  padding: 2.5%;
+}
+.lessons__footer span {
+  font-weight: 700;
+  font-size: 16px;
+}
+.lessons-default__header {
+  background-image: url("../images/library-effect.png");
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+  display: flex;
+  gap: 42;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.lessons-default__header h1 {
+  text-align: center;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 65px;
+}
+.lessons-default__header div {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  align-items: center;
+}
+.lessons-default__header div span {
+  font-size: 25px;
+  font-weight: 400;
+  margin-top: 0.4rem;
+}/*# sourceMappingURL=lessons.css.map */

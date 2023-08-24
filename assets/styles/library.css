@@ -1,0 +1,131 @@
+.library {
+  max-width: 1445px;
+  margin: 0 auto;
+}
+.library__header {
+  background: #f2f2f2;
+  height: 701px;
+  position: relative;
+  overflow: hidden;
+}
+.library__header__navbar {
+  opacity: 0.7;
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(7.5px);
+          backdrop-filter: blur(7.5px);
+  height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.library__header__navbar img {
+  height: 42px;
+  cursor: pointer;
+}
+.library__header__navbar div {
+  display: flex;
+  gap: 3.5rem;
+}
+.library__header__navbar div span {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+}
+.library__header__navbar div span a {
+  color: #000;
+  text-decoration: none;
+}
+.library__header__content {
+  background-image: url("../images/library-effect.png");
+  background-size: cover;
+  background-position: 25% 55%;
+  position: relative;
+  height: 619px;
+  top: 0;
+  bottom: 0;
+}
+.library__header__content span {
+  position: absolute;
+  bottom: 7%;
+  font-size: 20px;
+  color: #fdc9c4;
+  font-weight: 700;
+  left: 7%;
+}
+.library__header__content .banner-logo {
+  position: absolute;
+  left: 43%;
+  top: 64%;
+}
+.library__header__content .learn {
+  position: absolute;
+  bottom: 0;
+}
+.library__content {
+  padding: 7%;
+}
+.library__content__stages {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.library__content__stages div {
+  display: flex;
+  align-items: center;
+  gap: 33px;
+}
+.library__content__cards {
+  margin-top: 4rem;
+  display: flex;
+  gap: 3.8rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.library__content__cards .card {
+  background: #f2f2f2;
+  width: 370px;
+  height: 235px;
+  cursor: pointer;
+}
+.library__content__cards .card a {
+  color: black;
+  text-decoration: none;
+}
+.library__content__cards .card__header {
+  display: flex;
+  width: 88%;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  justify-content: space-between;
+}
+.library__content__cards .card__header h1 {
+  font-size: 35px;
+  font-weight: 700;
+}
+.library__content__cards .card__footer {
+  display: flex;
+  flex-direction: column;
+  width: 88%;
+  align-items: flex-end;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+.library__content__cards .card__footer span {
+  font-size: 20px;
+  font-weight: 400;
+}
+.library__content__cards .card__footer p {
+  margin: 0;
+  font-weight: 700;
+  font-size: 25px;
+}
+.library__footer {
+  padding: 2.5%;
+  background: #f2f2f2;
+}
+.library__footer span {
+  font-weight: 700;
+  font-size: 16px;
+}/*# sourceMappingURL=library.css.map */
