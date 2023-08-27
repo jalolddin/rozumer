@@ -1,11 +1,13 @@
 .lessons {
     max-width: 1445px;
     margin: 0 auto;
+
     &__header {
         background: #f2f2f2;
         height: 701px;
         position: relative;
         overflow: hidden;
+
         &__navbar {
             opacity: 0.7;
             background: rgba(255, 255, 255, 0.7);
@@ -16,17 +18,21 @@
             justify-content: space-between;
             padding-left: 5%;
             padding-right: 5%;
+
             img {
                 height: 42px;
                 cursor: pointer;
             }
+
             div {
                 display: flex;
                 gap: 3.5rem;
+
                 span {
                     cursor: pointer;
                     font-size: 20px;
                     font-weight: 700;
+
                     a {
                         color: #000;
                         text-decoration: none;
@@ -34,63 +40,76 @@
                 }
             }
         }
-        &__content{
+
+        &__content {
             background-image: url('../images/library-effect.png');
             background-size: cover;
             height: 100%;
             background-position: 25% 58%;
-            .learn{
+
+            .learn {
                 z-index: 22;
             }
         }
     }
+
     &__content {
         padding: 7%;
+
         &__stages {
             display: flex;
             align-items: center;
             justify-content: center;
         }
+
         &__cards {
             margin-top: 4rem;
             display: flex;
             gap: 3.8rem;
             justify-content: space-between;
             flex-wrap: wrap;
+
             .card {
-                a{
+                a {
                     color: black;
                     text-decoration: none;
                 }
+
                 background: #f2f2f2;
                 width: 370px;
                 height: 235px;
                 cursor: pointer;
+
                 &__header {
                     display: flex;
                     justify-content: flex-end;
                     width: 88%;
                     margin: 0 auto;
                     margin-top: 0.5rem;
+
                     h1 {
                         font-size: 35px;
                         font-weight: 700;
                     }
                 }
+
                 &__footer {
                     display: flex;
                     justify-content: space-between;
                     width: 88%;
                     margin: 0 auto;
                     margin-top: 4rem;
+
                     div {
                         display: flex;
                         align-items: flex-end;
                         flex-direction: column;
+
                         span {
                             font-size: 20px;
                             font-weight: 400;
                         }
+
                         p {
                             margin: 0;
                             font-weight: 700;
@@ -101,16 +120,20 @@
             }
         }
     }
+
     .high {
         background: #f2f2f2;
+
         .card {
             background-color: white;
         }
     }
+
     &-info__content {
         display: flex;
         padding: 7%;
         gap: 2.7rem;
+
         .record {
             background: #d9d9d9;
             width: 782px;
@@ -118,11 +141,13 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            h1{
+
+            h1 {
                 font-weight: 700;
                 font-size: 35px;
             }
         }
+
         .chat {
             display: flex;
             align-items: center;
@@ -130,55 +155,199 @@
             width: 439px;
             height: 440px;
             background: #d9d9d9;
-            h1{
+
+            h1 {
                 font-weight: 700;
                 font-size: 35px;
             }
         }
     }
+
     &-info__footer {
         padding: 2.5%;
         background: #f2f2f2;
-        span {
-            font-weight: 700;
-            font-size: 16px;
-        }
-    }
-    &__footer {
-        padding: 2.5%;
+
         span {
             font-weight: 700;
             font-size: 16px;
         }
     }
 
-    &-default__header{
+    &__footer {
+        padding: 2.5%;
+
+        span {
+            font-weight: 700;
+            font-size: 16px;
+        }
+    }
+
+    &-default__header {
         background-image: url('../images/library-effect.png');
         background-size: cover;
         height: 100%;
-        background-position: center;
+        background-position: 25% 58%;
         display: flex;
         gap: 42;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        h1{
+
+        h1 {
             text-align: center;
             font-size: 70px;
             font-weight: 700;
             line-height: 65px
         }
-        div{
+
+        div {
             display: flex;
             flex-direction: row;
             gap: 18px;
             align-items: center;
-            span{
+
+            span {
                 font-size: 25px;
                 font-weight: 400;
                 margin-top: 0.4rem;
             }
-            
+
+        }
+    }
+
+    .banking {
+        padding: 5%;
+        margin-bottom: 3rem;
+
+        h1 {
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        p {
+            margin-top: 4rem;
+            font-size: 25px;
+            font-weight: 400;
+
+            a {
+                color: #EB140A;
+            }
+        }
+    }
+
+    .internet {
+        padding: 5%;
+
+        &__title {
+            font-size: 25px;
+            font-weight: 700;
+            margin-bottom: 4.5rem;
+        }
+
+        &__subtitle {
+            font-size: 25px;
+            font-weight: 400;
+        }
+
+        &__quote {
+            font-size: 25px;
+            font-weight: 400;
+            margin-top: 6.2rem;
+
+            span {
+                font-weight: 700;
+            }
+        }
+
+        .credentials {
+            margin-top: 3rem;
+
+            .credential {
+                margin-top: 8px;
+
+                div {
+                    display: flex;
+                    gap: 12px;
+
+                    div {
+                        width: 13px;
+                        height: 61px;
+                        background: var(--tree, linear-gradient(180deg, #EB140A 0%, #7A8EFF 100%));
+                    }
+
+                    h1 {
+                        font-weight: 700;
+                        font-size: 25px;
+                    }
+                }
+
+                p {
+                    font-size: 25px;
+                    font-weight: 400;
+                    width: 90%;
+                }
+            }
+        }
+    }
+
+    .esg {
+        padding: 5%;
+        margin-bottom: 4rem;
+
+        &__title {
+            font-weight: 700;
+            font-size: 25px;
+            width: 85%;
+            margin-bottom: 6rem;
+        }
+
+        .credential {
+            display: flex;
+            flex-direction: column;
+            margin-top: 4.5rem;
+
+            &__header {
+                display: flex;
+                gap: 12px;
+
+                div {
+                    width: 13px;
+                    height: 61px;
+                    background: var(--tree, linear-gradient(180deg, #EB140A 0%, #7A8EFF 100%));
+                }
+
+                h1 {
+                    font-weight: 700;
+                    font-size: 25px;
+                }
+            }
+
+            &__content {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-top: 3rem;
+                gap: 7rem;
+
+                p {
+                    font-weight: 400;
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+    .voice{
+        padding: 5%;
+        margin-bottom: 4rem;
+        p{
+            font-size: 25px;
+            font-weight: 700;
+            width: 90%;
+        }
+        .video{ 
+            margin-top: 3rem;
+            width: 100%;
+            height: 40rem;
         }
     }
 }

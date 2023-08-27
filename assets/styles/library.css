@@ -113,13 +113,13 @@
   margin-top: 4rem;
 }
 .library__content__cards .card__footer span {
-  font-size: 20px;
-  font-weight: 400;
+  font-weight: 700;
+  font-size: 25px;
 }
 .library__content__cards .card__footer p {
   margin: 0;
-  font-weight: 700;
-  font-size: 25px;
+  font-size: 20px;
+  font-weight: 400;
 }
 .library__footer {
   padding: 2.5%;

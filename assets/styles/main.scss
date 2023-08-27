@@ -1,8 +1,9 @@
+@import url(https://db.onlinewebfonts.com/c/a46184f8d7484ccf6bfdf17ab89e2e67?family=A1+Serif);
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: A1 Serif;
+    font-family: "A1 Serif";
 }
 
 .main {
@@ -313,4 +314,68 @@ body {
             font-size: 16px;
         }
     }
+}
+@media only screen and (max-width: 480px){
+.main{
+    &__header{
+        .learn{
+            height: 25rem;
+        }
+        &__navbar{
+            div{
+                display: none;
+            }
+        }
+    }
+    &__welcome{
+        &__left{
+            p{
+                font-size: 8px;
+                width: 100%;
+            }
+        }
+    }
+    &__middle{
+        &__title{
+            flex-direction: column;
+            img{
+                height: 3rem;
+            }
+        }
+        &__time{
+            flex-direction: column;
+            .watering{
+                img{
+                    height: 20rem;
+                }
+            }
+            &__content{
+                .info{
+                    width: 221px;
+                }
+            }
+        }
+    }
+    &__high{
+        &__title{
+            flex-direction: column;
+            img{
+                height: 3rem;
+            }
+        }
+        &__time{
+            flex-direction: column;
+            .watering{
+                img{
+                    height: 20rem;
+                }
+            }
+            &__content{
+                .info{
+                    width: 221px;
+                }
+            }
+        }
+    }
+}
 }

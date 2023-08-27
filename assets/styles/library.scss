@@ -107,18 +107,19 @@
                     margin: 0 auto;
                     margin-top: 4rem;
                     span {
-                        font-size: 20px;
-                        font-weight: 400;
+                        font-weight: 700;
+                        font-size: 25px;
                     }
                     p {
                         margin: 0;
-                        font-weight: 700;
-                        font-size: 25px;
+                        font-size: 20px;
+                        font-weight: 400;
                     }
                 }
             }
         }
     }
+    
     &__footer {
         padding: 2.5%;
         background: #f2f2f2;

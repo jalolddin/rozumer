@@ -157,7 +157,7 @@
   background-image: url("../images/library-effect.png");
   background-size: cover;
   height: 100%;
-  background-position: center;
+  background-position: 25% 58%;
   display: flex;
   gap: 42;
   flex-direction: column;
@@ -180,4 +180,117 @@
   font-size: 25px;
   font-weight: 400;
   margin-top: 0.4rem;
+}
+.lessons .banking {
+  padding: 5%;
+  margin-bottom: 3rem;
+}
+.lessons .banking h1 {
+  font-size: 25px;
+  font-weight: 700;
+}
+.lessons .banking p {
+  margin-top: 4rem;
+  font-size: 25px;
+  font-weight: 400;
+}
+.lessons .banking p a {
+  color: #EB140A;
+}
+.lessons .internet {
+  padding: 5%;
+}
+.lessons .internet__title {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 4.5rem;
+}
+.lessons .internet__subtitle {
+  font-size: 25px;
+  font-weight: 400;
+}
+.lessons .internet__quote {
+  font-size: 25px;
+  font-weight: 400;
+  margin-top: 6.2rem;
+}
+.lessons .internet__quote span {
+  font-weight: 700;
+}
+.lessons .internet .credentials {
+  margin-top: 3rem;
+}
+.lessons .internet .credentials .credential {
+  margin-top: 8px;
+}
+.lessons .internet .credentials .credential div {
+  display: flex;
+  gap: 12px;
+}
+.lessons .internet .credentials .credential div div {
+  width: 13px;
+  height: 61px;
+  background: var(--tree, linear-gradient(180deg, #EB140A 0%, #7A8EFF 100%));
+}
+.lessons .internet .credentials .credential div h1 {
+  font-weight: 700;
+  font-size: 25px;
+}
+.lessons .internet .credentials .credential p {
+  font-size: 25px;
+  font-weight: 400;
+  width: 90%;
+}
+.lessons .esg {
+  padding: 5%;
+  margin-bottom: 4rem;
+}
+.lessons .esg__title {
+  font-weight: 700;
+  font-size: 25px;
+  width: 85%;
+  margin-bottom: 6rem;
+}
+.lessons .esg .credential {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4.5rem;
+}
+.lessons .esg .credential__header {
+  display: flex;
+  gap: 12px;
+}
+.lessons .esg .credential__header div {
+  width: 13px;
+  height: 61px;
+  background: var(--tree, linear-gradient(180deg, #EB140A 0%, #7A8EFF 100%));
+}
+.lessons .esg .credential__header h1 {
+  font-weight: 700;
+  font-size: 25px;
+}
+.lessons .esg .credential__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 3rem;
+  gap: 7rem;
+}
+.lessons .esg .credential__content p {
+  font-weight: 400;
+  font-size: 25px;
+}
+.lessons .voice {
+  padding: 5%;
+  margin-bottom: 4rem;
+}
+.lessons .voice p {
+  font-size: 25px;
+  font-weight: 700;
+  width: 90%;
+}
+.lessons .voice .video {
+  margin-top: 3rem;
+  width: 100%;
+  height: 40rem;
 }/*# sourceMappingURL=lessons.css.map */
