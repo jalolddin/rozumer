@@ -7,7 +7,6 @@ body {
 }
 
 .main {
-  max-width: 1445px;
   margin: 0 auto;
 }
 .main__header {
@@ -46,6 +45,10 @@ body {
   color: #000;
   text-decoration: none;
 }
+.main__header__content {
+  max-width: 1445px;
+  margin: 0 auto;
+}
 .main__header__content span {
   position: absolute;
   bottom: 5%;
@@ -76,11 +79,15 @@ body {
   position: relative;
 }
 .main__welcome__effect {
+  max-width: 1445px;
+  margin: 0 auto;
   position: absolute;
   bottom: 7%;
   right: 0;
 }
 .main__welcome__left {
+  max-width: 1445px;
+  margin: 0 auto;
   width: 92%;
   margin: 0 auto;
   height: auto;
@@ -103,6 +110,7 @@ body {
   justify-content: flex-end;
   width: 92%;
   margin: 0 auto;
+  max-width: 1445px;
 }
 .main__welcome__right h1 {
   font-size: 50px;
@@ -126,6 +134,7 @@ body {
   width: 95%;
   margin: 0 auto;
   margin-top: 6rem;
+  max-width: 1445px;
 }
 .main__middle .title {
   font-size: 50px;
@@ -225,6 +234,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 1445px;
+  margin: 0 auto;
 }
 .main__high__title .buttons {
   display: flex;
@@ -251,6 +262,8 @@ body {
   background: #eb140a;
 }
 .main__high__time {
+  max-width: 1445px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
@@ -306,6 +319,8 @@ body {
 }
 .main__footer {
   padding: 2.5%;
+  max-width: 1445px;
+  margin: 0 auto;
 }
 .main__footer span {
   font-weight: 700;
@@ -495,5 +510,10 @@ body {
   }
   .footer span {
     font-size: 10px;
+  }
+}
+@media only screen and (min-width: 480px) {
+  .burger-menu {
+    display: none;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -8,7 +8,6 @@ body {
 }
 
 .main {
-    max-width: 1445px;
     margin: 0 auto;
 
     &__header {
@@ -17,7 +16,6 @@ body {
         background-repeat: no-repeat;
         height: 850px;
         position: relative;
-
         &__navbar {
             opacity: 0.7;
             background: rgba(255, 255, 255, 0.7);
@@ -52,6 +50,8 @@ body {
         }
 
         &__content {
+            max-width: 1445px;
+            margin: 0 auto;
             span {
                 position: absolute;
                 bottom: 5%;
@@ -88,12 +88,16 @@ body {
         position: relative;
 
         &__effect {
+            max-width: 1445px;
+            margin: 0 auto;
             position: absolute;
             bottom: 7%;
             right: 0;
         }
 
         &__left {
+            max-width: 1445px;
+            margin: 0 auto;
             width: 92%;
             margin: 0 auto;
             height: auto;
@@ -120,7 +124,7 @@ body {
             justify-content: flex-end;
             width: 92%;
             margin: 0 auto;
-
+            max-width: 1445px;
             h1 {
                 font-size: 50px;
                 font-weight: 700;
@@ -151,7 +155,7 @@ body {
         width: 95%;
         margin: 0 auto;
         margin-top: 6rem;
-
+        max-width: 1445px;
         .title {
             font-size: 50px;
             font-weight: 700;
@@ -267,7 +271,8 @@ body {
             display: flex;
             align-items: center;
             justify-content: space-between;
-
+            max-width: 1445px;
+            margin: 0 auto;
             .buttons {
                 display: flex;
                 gap: 1rem;
@@ -298,6 +303,8 @@ body {
         }
 
         &__time {
+            max-width: 1445px;
+            margin: 0 auto;
             display: flex;
             justify-content: space-between;
             flex-direction: row-reverse;
@@ -363,7 +370,8 @@ body {
 
     &__footer {
         padding: 2.5%;
-
+        max-width: 1445px;
+        margin: 0 auto;
         span {
             font-weight: 700;
             font-size: 16px;
@@ -605,5 +613,10 @@ body {
         span{
             font-size: 10px;
         }
+    }
+}
+@media only screen and (min-width: 480px) {
+    .burger-menu{
+        display: none;
     }
 }
