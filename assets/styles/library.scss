@@ -1,4 +1,43 @@
 .library {
+    position: relative;
+    .mobile-menu{
+        display: none;
+        z-index: 99;
+        width: 100%;
+        position: fixed;
+        background-color: white;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        .header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5%;
+            margin-top: 1rem;
+            img{
+                cursor: pointer;
+            }
+        }
+        .mobile-links{
+            padding: 5%;
+            display: flex;
+            margin-top: 3rem;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1.2rem;
+            span{
+                a{
+                    text-decoration: none;
+                    color: black;
+                    font-size: 30px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
     &__header {
         background: #f2f2f2;
         height: 701px;
@@ -144,14 +183,16 @@
             background-position: right;
 
             &__content {
+                height: 100%;
                 span {
                     font-size: 12px;
                 }
             }
 
             .learn {
-                height: 17rem;
-                bottom: -5rem;
+                height: 13rem;
+                bottom: 3rem;
+                left: -1.5rem;
             }
 
             .banner-logo {

@@ -1,3 +1,42 @@
+.lessons {
+  position: relative;
+}
+.lessons .mobile-menu {
+  display: none;
+  z-index: 99;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+.lessons .mobile-menu .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5%;
+  margin-top: 1rem;
+}
+.lessons .mobile-menu .header img {
+  cursor: pointer;
+}
+.lessons .mobile-menu .mobile-links {
+  padding: 5%;
+  display: flex;
+  margin-top: 3rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2rem;
+}
+.lessons .mobile-menu .mobile-links span a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  font-weight: 700;
+}
 .lessons__header {
   background: #f2f2f2;
   height: 701px;
