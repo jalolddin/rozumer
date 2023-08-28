@@ -336,18 +336,162 @@
             }
         }
     }
-    .voice{
+
+    .voice {
         padding: 5%;
         margin-bottom: 4rem;
-        p{
+
+        p {
             font-size: 25px;
             font-weight: 700;
             width: 90%;
         }
-        .video{ 
+
+        .video {
             margin-top: 3rem;
             width: 100%;
             height: 40rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .lessons {
+        &-default__header {
+            height: 70%;
+
+            h1 {
+                font-size: 30px;
+                line-height: 2rem;
+            }
+
+            div {
+                img {
+                    height: 1.2rem;
+                }
+
+                span {
+                    font-size: 20px;
+                    margin-top: 0;
+                }
+            }
+        }
+
+        &__header {
+            height: 320px;
+
+            &__content {
+                span {
+                    font-size: 12px;
+                }
+            }
+
+            .learn {
+                height: 14rem;
+                bottom: 0;
+                position: absolute;
+            }
+
+            .banner-logo {
+                height: 1rem;
+                top: 68%;
+            }
+
+            &__navbar {
+                div {
+                    display: none;
+                }
+            }
+
+        }
+
+        &__content {
+            &__stages {
+                img {
+                    height: 3rem;
+                }
+            }
+        }
+
+        .internet {
+            .credentials {
+                .credential {
+                    div {
+                        align-items: center;
+
+                        h1 {
+                            font-size: 18px;
+                        }
+                    }
+
+                    p {
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            &__quote {
+                font-size: 12px;
+                margin-top: 2rem;
+            }
+        }
+
+        .banking {
+            p {
+                font-size: 15px;
+            }
+        }
+
+        .esg {
+            margin-bottom: 0;
+            &__title{
+                font-size: 15px;
+            }
+            .credential {
+                margin-top: 2rem;
+                &__header {
+                    align-items: center;
+
+                    h1 {
+                        font-size: 18px;
+                    }
+                }
+
+                &__content {
+                    flex-direction: column;
+                    gap: 0;
+                    img{
+                        width: 100%;
+                    }
+                    p {
+                        font-size: 15px
+                    }
+                }
+            }
+        }
+        .voice{
+            p{
+                font-size: 15px;
+            }
+        }
+        .lessons-info__content{
+            flex-direction: column;
+            padding: 2%;
+            .record{
+                width: 100%;
+            }
+            .chat{
+                width: 100%;
+            }
+        }
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+
+        span {
+            font-size: 10px;
         }
     }
 }

@@ -67,6 +67,7 @@
             display: flex;
             align-items: center;
             gap: 40px;
+            flex-wrap: wrap;
             div {
                 display: flex;
                 align-items: center;
@@ -130,6 +131,49 @@
         span {
             font-weight: 700;
             font-size: 16px;
+        }
+    }
+}
+@media only screen and (max-width: 480px) {
+    .library{
+        &__header {
+            height: 320px;
+            background-position: right;
+
+            &__content {
+                span {
+                    font-size: 12px;
+                }
+            }
+
+            .learn {
+                height: 17rem;
+                bottom: -5rem;
+            }
+
+            .banner-logo {
+                height: 1rem;
+                top: 68%;
+            }
+
+            &__navbar {
+                div {
+                    display: none;
+                }
+            }
+
+        }
+        &__content{
+            &__stages{
+                flex-direction: column;
+            }
+        }
+    }
+    .footer{
+        display: flex;
+        justify-content: center;
+        span{
+            font-size: 10px;
         }
     }
 }

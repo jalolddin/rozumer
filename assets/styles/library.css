@@ -70,6 +70,7 @@
   display: flex;
   align-items: center;
   gap: 40px;
+  flex-wrap: wrap;
 }
 .library__content__stages div {
   display: flex;
@@ -131,4 +132,35 @@
 .library__footer span {
   font-weight: 700;
   font-size: 16px;
+}
+
+@media only screen and (max-width: 480px) {
+  .library__header {
+    height: 320px;
+    background-position: right;
+  }
+  .library__header__content span {
+    font-size: 12px;
+  }
+  .library__header .learn {
+    height: 17rem;
+    bottom: -5rem;
+  }
+  .library__header .banner-logo {
+    height: 1rem;
+    top: 68%;
+  }
+  .library__header__navbar div {
+    display: none;
+  }
+  .library__content__stages {
+    flex-direction: column;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
+  .footer span {
+    font-size: 10px;
+  }
 }/*# sourceMappingURL=library.css.map */
