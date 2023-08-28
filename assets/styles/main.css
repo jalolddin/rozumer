@@ -313,24 +313,90 @@ body {
 }
 
 @media only screen and (max-width: 480px) {
+  .navbar div {
+    display: none;
+  }
+  .navbar .logo {
+    height: 1.5rem;
+  }
+  .main__header {
+    height: 320px;
+    background-position: right;
+  }
+  .main__header__content span {
+    font-size: 12px;
+  }
   .main__header .learn {
-    height: 25rem;
+    height: 17rem;
+    bottom: -5rem;
+  }
+  .main__header .banner-logo {
+    height: 1rem;
+    top: 68%;
   }
   .main__header__navbar div {
     display: none;
   }
+  .main__header .letter-sign {
+    height: 5rem;
+  }
+  .main__welcome__effect {
+    top: 37%;
+    height: 59%;
+  }
+  .main__welcome__left h1 {
+    font-size: 22px;
+  }
   .main__welcome__left p {
-    font-size: 8px;
+    font-size: 9px;
     width: 100%;
+  }
+  .main__welcome__right {
+    margin-top: 4.5rem;
+  }
+  .main__welcome__right .row h1 {
+    font-size: 22px;
+    margin-left: 0;
+  }
+  .main__welcome__right .row div img {
+    height: 1.5rem;
+    margin-top: 0.6rem;
+  }
+  .main__welcome__right .row div p {
+    font-size: 9px;
+  }
+  .main__middle {
+    padding: 5%;
+    margin-top: 0;
   }
   .main__middle__title {
     flex-direction: column;
+    align-items: flex-start;
+  }
+  .main__middle__title .buttons button {
+    margin-top: 13px;
+    font-size: 10px;
+    height: 32px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .main__middle__title .buttons button img {
+    height: 1rem;
   }
   .main__middle__title img {
-    height: 3rem;
+    height: 2.5rem;
   }
   .main__middle__time {
     flex-direction: column;
+    margin-top: 0;
+  }
+  .main__middle__time .title {
+    font-size: 30px;
+  }
+  .main__middle__time .watering {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
   }
   .main__middle__time .watering img {
     height: 20rem;
@@ -338,19 +404,90 @@ body {
   .main__middle__time__content .info {
     width: 221px;
   }
+  .main__middle__time__content .info div h2 {
+    font-size: 10px;
+  }
+  .main__middle__time__content .info div span {
+    font-size: 7px;
+    margin-top: 2px;
+  }
+  .main__middle__time__content .info p {
+    font-size: 6px;
+  }
+  .main__middle__time__content .video {
+    gap: 5px;
+  }
+  .main__middle__time__content .video img {
+    height: 1.8rem;
+  }
+  .main__middle__time__content .video span {
+    font-size: 10px;
+  }
+  .main__high {
+    padding: 5%;
+    margin-top: 0;
+  }
   .main__high__title {
     flex-direction: column;
+    align-items: flex-start;
+  }
+  .main__high__title .buttons button {
+    margin-top: 13px;
+    font-size: 10px;
+    height: 32px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .main__high__title .buttons button img {
+    height: 1rem;
   }
   .main__high__title img {
-    height: 3rem;
+    height: 2.5rem;
   }
   .main__high__time {
     flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+  }
+  .main__high__time .title {
+    font-size: 30px;
+  }
+  .main__high__time .watering {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 100%;
   }
   .main__high__time .watering img {
     height: 20rem;
   }
   .main__high__time__content .info {
     width: 221px;
+  }
+  .main__high__time__content .info div h2 {
+    font-size: 10px;
+  }
+  .main__high__time__content .info div span {
+    font-size: 7px;
+    margin-top: 2px;
+  }
+  .main__high__time__content .info p {
+    font-size: 6px;
+  }
+  .main__high__time__content .video {
+    gap: 5px;
+  }
+  .main__high__time__content .video img {
+    height: 1.8rem;
+  }
+  .main__high__time__content .video span {
+    font-size: 10px;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
+  .footer span {
+    font-size: 10px;
   }
 }/*# sourceMappingURL=main.css.map */
