@@ -118,9 +118,8 @@ body {
   position: relative;
 }
 .main__welcome__effect {
-  max-width: 1445px;
-  margin: 0 auto;
   position: absolute;
+  width: 100%;
   bottom: 7%;
   right: 0;
 }
@@ -182,6 +181,7 @@ body {
 .main__middle__title {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .main__middle__title .buttons {
@@ -212,6 +212,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
+  flex-wrap: wrap;
 }
 .main__middle__time__content {
   display: flex;
@@ -274,6 +275,7 @@ body {
   align-items: center;
   justify-content: space-between;
   max-width: 1445px;
+  flex-wrap: wrap;
   margin: 0 auto;
 }
 .main__high__title .buttons {
@@ -308,6 +310,7 @@ body {
   flex-direction: row-reverse;
   margin-top: 2rem;
   align-items: flex-end;
+  flex-wrap: wrap;
 }
 .main__high__time__content {
   display: flex;
@@ -551,13 +554,46 @@ body {
     font-size: 10px;
   }
 }
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 520px) {
   .burger-menu {
     display: none;
   }
 }
 @media only screen and (min-width: 1445px) and (max-width: 2500px) {
   .main__welcome__effect {
-    bottom: 20%;
+    bottom: 8%;
+  }
+}
+@media only screen and (min-width: 520px) and (max-width: 900px) {
+  .lessons .learn {
+    height: 29rem;
+    position: absolute;
+    bottom: 0;
+  }
+  .library .learn {
+    height: 25rem;
+    left: -5%;
+  }
+  .main .learn {
+    height: 50rem;
+  }
+  .main__header__content .banner-logo {
+    left: 45%;
+    top: 60%;
+  }
+  .main__high__time {
+    flex-direction: row;
+  }
+  .library .library__content__cards .card {
+    width: 100%;
+  }
+  .lessons .lessons__content__cards .card {
+    width: 100%;
+  }
+  .credential__content {
+    flex-wrap: wrap;
+  }
+  .footer {
+    text-align: center;
   }
 }/*# sourceMappingURL=main.css.map */
